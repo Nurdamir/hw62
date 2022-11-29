@@ -1,7 +1,6 @@
 import React from 'react';
-import './App.css';
-import Navbar from "./components/Navbar/Navbar";
 import {Routes, Route} from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./containers/Home/Home";
 import AboutMe from "./containers/AboutMe/AboutMe";
 import Skills from "./containers/Skills/Skills";
@@ -11,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 import Countries from "./components/Countries/Countries";
 import Chat from "./components/Chat/Chat";
 import ToDoList from "./components/ToDoList/ToDoList";
+import './App.css';
 
 function App() {
   return (
@@ -18,7 +18,6 @@ function App() {
       <header className="header mb-4">
         <Navbar/>
       </header>
-
       <main className="main-block">
         <Routes>
           <Route path="/" element={(
